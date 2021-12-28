@@ -11,9 +11,10 @@ export async function chooseLinting(): Promise<Answer> {
 
   return await inquirer.prompt([
     {
-      type: "checkbox",
+      type: "confirm",
       name: "linting",
-      message: "What type of structure do you want to use?",
+      message: "Do you want to enable linting? (default: false)",
+      default: false,
       choices: types,
     },
   ]);
