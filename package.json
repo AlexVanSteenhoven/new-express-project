@@ -1,16 +1,16 @@
 {
-  "name": "create-express-app",
+  "name": "new-express-project",
   "version": "0.3.0",
   "description": "Generate the structure of an express app or API with basic setup.",
   "main": "./lib/index.js",
   "bin": {
-    "create-express-app": "./bin/create-express-app"
+    "new-express-project": "./bin/new-express-project"
   },
   "scripts": {
     "start": "npm run build && npm run global",
     "lint": "tslint -p . --fix",
     "build": "tsc -p .",
-    "global": "npm i -g && create-express-app",
+    "global": "npm i -g && new-express-project",
     "clean:some": "rm -rf ./lib ./docs",
     "clean:all": "rm -rf ./node_modules ./package-lock.json ./lib ./docs",
     "refresh": "npm run clean:all && npm install",
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexVanSteenhoven/create-express-app.git"
+    "url": "git+https://github.com/AlexVanSteenhoven/new-express-project.git"
   },
   "keywords": [
     "Generator",
@@ -31,9 +31,9 @@
   "author": "Alex van Steenhoven <alex.steenhoven@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AlexVanSteenhoven/create-express-app/issues"
+    "url": "https://github.com/AlexVanSteenhoven/new-express-project/issues"
   },
-  "homepage": "https://github.com/AlexVanSteenhoven/create-express-app#readme",
+  "homepage": "https://github.com/AlexVanSteenhoven/new-express-project#readme",
   "devDependencies": {
     "@liftr/tscov": "^2.0.0",
     "@types/figlet": "^1.5.4",
