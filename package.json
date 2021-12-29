@@ -1,6 +1,6 @@
 {
   "name": "create-express-app",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Generate the structure of an express app or API with basic setup.",
   "main": "./lib/index.js",
   "bin": {
