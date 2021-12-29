@@ -1,6 +1,6 @@
 {
   "name": "new-express-project",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Generate the structure of an express app or API with basic setup.",
   "main": "./lib/index.js",
   "bin": {
