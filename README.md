@@ -1,23 +1,23 @@
-# create-express-app
+# new-express-project
 
-[![npm_version](https://img.shields.io/npm/v/create-express-app?style=for-the-badge)](https://github.com/AlexVanSteenhoven/create-express-app)
-[![npm_license](https://img.shields.io/npm/l/create-express-app?style=for-the-badge)](https://github.com/AlexVanSteenhoven/create-express-app/blob/master/LICENSE)
+[![npm_version](https://img.shields.io/npm/v/new-express-project?style=for-the-badge)](https://github.com/AlexVanSteenhoven/new-express-project)
+[![npm_license](https://img.shields.io/npm/l/new-express-project?style=for-the-badge)](https://github.com/AlexVanSteenhoven/new-express-project/blob/master/LICENSE)
 
-## Getting started
+## Getting started (Status: Not published yet)
 
-Install `create-express-app` globally
+Install `new-express-project` globally
 
 ```sh
-npm install --global create-express-app
+npm install --global new-express-project
 
 # then run the command
-create-express-app
+new-express-project
 ```
 
 Or just use npx:
 
 ```bash
-npx create-express-app
+npx new-express-project
 ```
 
 ### About this project
