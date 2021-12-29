@@ -1,45 +1,21 @@
-import Answer from "./models/answer.model";
-import getValue from "./utils/getValue";
-
-import { ChoiceValues } from "./models/choice.model";
-import { chooseAppType, chooseFileType, chooseLinting, chooseStructureLevel } from "./questions";
+import { Generator } from "./utils/generate";
+import { Logger } from "./utils/logger";
 
 export class CLI {
-  private config = {};
-
-  private async createConfig(): Promise<Object> {
-    let appType: Answer = await chooseAppType();
-    let structureLevel: Answer = await chooseStructureLevel();
-
-    if (getValue(structureLevel) === ChoiceValues.BEGINNER) {
-      this.config = {
-        appType: getValue(appType),
-        structureLevel: getValue(structureLevel),
-      };
-    } else {
-      let fileType: Answer = await chooseFileType();
-      let linting: Answer = await chooseLinting();
-
-      this.config = {
-        appType: getValue(appType),
-        structureLevel: getValue(structureLevel),
-        fileType: getValue(fileType),
-        linting: getValue(linting),
-      };
-    }
-
-    return this.config;
-  }
-
   public async prepare() {
-    await this.createConfig();
+    const generator = new Generator();
+    const config = await generator.generateConfig();
+
+    console.log(config);
   }
 
   public async execute(): Promise<any> {
     // TODO run the prepared config
-
     try {
-      await this.prepare();
+      const logger = new Logger();
+      logger.showHeader();
+
+      return await this.prepare();
       // console.log(this.config);
     } catch (e) {
       return e;

@@ -29,7 +29,7 @@
     "Typescript"
   ],
   "author": "Alex van Steenhoven <alex.steenhoven@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/AlexVanSteenhoven/create-express-app/issues"
   },
