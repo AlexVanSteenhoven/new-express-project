@@ -1,6 +1,6 @@
 {
   "name": "new-express-project",
-  "version": "0.3.1",
+  "version": "0.3.5",
   "description": "Generate the structure of an express app or API with basic setup.",
   "main": "./lib/index.js",
   "bin": {
@@ -51,6 +51,7 @@
     "inquirer": "^8.2.0",
     "inversify": "^6.0.1",
     "kleur": "^4.1.4",
+    "moment": "^2.29.1",
     "superagent": "^6.1.0",
     "tslib": "^2.3.1"
   }
